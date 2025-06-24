@@ -1215,3 +1215,57 @@ ul {
         }
     }
 }
+
+.order {
+    margin-bottom: 70px;
+    padding-top: 35px;
+    &_content {
+        display: flex;
+        gap: 10px;
+    }
+    &_title {
+        filter: drop-shadow(1px 1px 8px rgba(255,229,32,0.73));
+    }
+    &_title, &_item {
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid $secondary-200;
+        h3, p {
+            height: 55px;
+            text-align: center;
+            margin: 0;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:first-child {
+                border-bottom: 1px solid rgba(255,248,240,0.3);
+            }
+        }
+        h3 {
+            color: $secondary-200;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_title {
+            display: none;
+        }
+        &_content {
+            display: block;
+        }
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin-bottom: 10px;
+            p {
+                height: auto;
+                &:first-child {
+                    border: 0;
+                    color: $secondary-300;
+                }
+            }
+        }
+    }
+}
