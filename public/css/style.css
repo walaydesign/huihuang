@@ -1077,6 +1077,11 @@ ul {
   background-size: 15px;
 }
 
+.buy_action > p {
+  font-size: 14px;
+  color: #EFB066;
+}
+
 .buy.login .buy_price {
   display: -webkit-box;
   display: -ms-flexbox;

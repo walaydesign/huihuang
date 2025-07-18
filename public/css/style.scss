@@ -906,6 +906,12 @@ ul {
             background-size: 15px;
         }
     }
+    &_action {
+        >p {
+            font-size: 14px;
+            color: $secondary-400;
+        }
+    }
     &.login {
         .buy {
             &_price {
