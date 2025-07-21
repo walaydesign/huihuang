@@ -175,7 +175,7 @@ ul {
 }
 
 .header_nav li {
-  width: calc(100% / 7);
+  width: calc(100% / 8);
   height: 100%;
 }
 
@@ -1533,6 +1533,132 @@ ul {
   }
   .record_item:last-child {
     border: 0;
+  }
+}
+
+.news {
+  padding: 40px 0;
+}
+
+.news .container {
+  max-width: 900px;
+}
+
+.news_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 15px 0;
+}
+
+.news_item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent 100%);
+}
+
+.news_item:nth-child(odd) .news_date {
+  background-color: #A4D4EC;
+}
+
+.news_item:nth-child(odd) .news_date > p {
+  color: #000F17;
+}
+
+.news_item:nth-child(even) .news_date {
+  background-color: #EAD6FF;
+}
+
+.news_item:nth-child(even) .news_date > p {
+  color: #1A0071;
+}
+
+.news_date {
+  padding: 10px 20px;
+  -webkit-transform: skewX(-7deg);
+          transform: skewX(-7deg);
+  width: 140px;
+}
+
+.news_date > p {
+  margin: 0;
+  -webkit-transform: skewX(7deg);
+          transform: skewX(7deg);
+  font-weight: 600;
+  text-align: center;
+}
+
+.news_title {
+  width: calc(100% - 140px);
+  margin: 0;
+  padding-left: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.news-detail_title {
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.news-detail_title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent 100%);
+}
+
+.news-detail_date {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #EFB066;
+}
+
+.news-detail_content {
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.news-detail .btn {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .news_item {
+    display: block;
+  }
+  .news_title {
+    width: 100%;
+    padding: 15px 0 0;
+  }
+  .news_date {
+    padding: 8px 15px;
+    width: 120px;
+  }
+  .news_date > p {
+    font-size: 14px;
+  }
+  .news-detail_title {
+    font-size: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
