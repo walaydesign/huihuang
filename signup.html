@@ -24,14 +24,10 @@
                         </h1>
                     </div>
                 </div>
-                <form class="header_login d-lg-block d-none">
-                    <h2>登入Login</h2>
-                    <div class="header_login_content">
-                        <input type="text" placeholder="帳號">
-                        <input type="password" placeholder="密碼">
-                        <button>登入</button>
-                    </div>
-                </form>
+                <div class="header_account d-lg-flex d-none">
+                    <p>大支，您好！</p>
+                    <a href="" class="d-lg-block d-none">登出</a>
+                </div>
                 <div class="header_menu d-lg-none">
                     <div class="header_menu_bar bar-top"></div>
                     <div class="header_menu_bar bar-middle"></div>
@@ -41,18 +37,21 @@
         </div>
         <nav class="header_nav">
             <div class="container">
+                <div class="header_account d-lg-none">
+                    <p>大支，您好！</p>
+                </div>
                 <ul>
-                    <li><a href="./index.html">輝煌VIP</a></li>
-                    <li><a href="./index.html">美籃猛料</a></li>
-                    <li><a href="./index.html">美棒殺莊</a></li>
-                    <li><a href="./index.html">亞洲內幕</a></li>
-                    <li><a href="./index.html">冰球分析</a></li>
-                    <li><a href="./save.html">方案購買</a></li>
+                    <li><a href="./">輝煌VIP</a></li>
+                    <li><a href="./">美籃猛料</a></li>
+                    <li><a href="./">美棒殺莊</a></li>
+                    <li><a href="./">亞洲內幕</a></li>
+                    <li><a href="./">冰球分析</a></li>
+                    <li><a href="./save-login.html">方案購買</a></li>
                     <li><a href="./news.html">最新消息</a></li>
                     <li><a href="./signup.html" class="active">立即註冊</a></li>
                 </ul>
                 <ul class="d-lg-none">
-                    <li><a data-bs-toggle="modal" data-bs-target="#loginmodal">登入</a></li>
+                    <li><a>登出</a></li>
                 </ul>
             </div>
         </nav>
